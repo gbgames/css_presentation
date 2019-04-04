@@ -1,0 +1,30 @@
+body {
+  background-color: darkgray;
+}
+
+h1 {
+
+}
+
+.Block {
+  margin: 10px; 
+  padding: 20px;
+  background-color: gray;
+}
+
+.Nav {
+  box-shadow: 10px 5px 5px 1px rgba(5, 5, 5, 5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Next {
+  background-color: blue;
+  color: white;
+  border: 1px solid lightgray;
+  max-width: 40px;
+  max-height: 40px;
+  margin: 10px; 
+  padding: 20px;
+  bottom: 10px;
+}
