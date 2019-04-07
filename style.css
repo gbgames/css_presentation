@@ -1,26 +1,29 @@
 body {
-  background-color: darkgray;
+  background-color: moccasin;
 }
 
 h1 {
-
+  font-family: serif;
+  font-weight: bold;
+  font-size: 46px;
 }
 
 .Block {
   margin: 10px; 
   padding: 20px;
-  background-color: gray;
+  background-color: yellowgreen;
 }
 
 .Nav {
   box-shadow: 10px 5px 5px 1px rgba(5, 5, 5, 5);
+  background-color: green;
   display: flex;
   justify-content: flex-end;
 }
 
 .Next {
-  background-color: blue;
-  color: white;
+  background-color: orange;
+  color: black;
   border: 1px solid lightgray;
   max-width: 40px;
   max-height: 40px;
