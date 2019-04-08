@@ -1,0 +1,223 @@
+@keyframes moveHead{
+  0%  { bottom: 40%; rgba(0,0,0,0.5);}
+  50%  { bottom: 50%; rgba(0,0,0,0.5);}
+  100%{ bottom: 20%; rgba(0,0,0,0.1);}
+}
+
+@keyframes rain {
+  0% {height: 0;}
+  2% {height: 6px;}
+  5% {height: 6px;top:14px}
+  22% {top:100%; height:4px;opacity:1;}
+  23%{opacity: 0;height:0px}
+  100%{opacity: 0}
+}
+
+body {
+  background: green;
+}
+
+.field {
+  top: 50px;
+  left: 100px;
+  width: var(--width);
+  height: var(--height);
+
+  background: url(grass.jpg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+* {
+  position: absolute;
+  text-align: center;
+}
+
+.bunnyBig {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 25px;
+}
+
+.bunnyLittle {
+  width: 50px;
+  height: 50px;
+  top: 200px;
+  left: 300px;
+}
+
+.head {
+  width: 100%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.head:hover {
+  animation: moveHead 1.5s linear 0s alternate both;
+}
+
+.face {
+  width: 80%;
+  height: 90%;
+  top: 10%; 
+  transform: translate(-50%, 0%);
+  background-color: pink;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.nose {
+  width: 30%;
+  height: 25%;
+  top: 60%;
+  transform: translate(-50%, 10%);
+  background-color: red;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.teeth {
+  width: 20%;
+  height: 30%;
+  top: 80%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.eyes {
+  width: 100%;
+  height: 60%;
+  top: 3%;
+  left: 0;
+}
+
+.eye {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.left-eye {
+  left: 10%;
+  transform: rotate(-20deg);
+}
+
+.right-eye {
+  right: 10%;
+  transform: rotate(20deg);
+}
+
+.pupil {
+  width: 30%;
+  height: 50%;
+  left: 20%;
+  top: 50%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.ear {
+  width: 20%;
+  height: 100%;
+  top: 50%;
+  transform-origin: top;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.ear-left {
+  left: 10%;
+  transform: rotate(170deg);
+}
+
+
+.ear-right {
+  right: 10%;
+  transform: rotate(-170deg);
+}
+
+.inner-ear {
+  width: 50%;
+  height: 90%;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(50%, 0%);
+}
+
+.body {
+  width: 100%;
+  height: 80%;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.rain_overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.drop {
+  left: var(--offset);
+  width: 20px;
+  height: 20px;
+  background: blue;
+  height: 0;
+  top:14px;
+  opacity: 1;
+  animation: rain 2.25s linear infinite;
+  animation-delay: var(--delay);
+}
+
+#eatingCarrot {
+  display: none;
+  bottom: 0;
+}
+
+.carrot {
+  transform: translate(0, 150%);
+  right: 20px;
+  background: orange;
+  width: 50px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.carrot:hover {
+  background: yellow;
+}
+
+.carrot:active {
+  background: orange;
+  outline: 1px solid black;
+}
+
+.dispenser {
+  right: 100px;
+  background: orange;
+  width: 50px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.dispenser:hover {
+  background: yellow;
+}
+
+.dispenser:active {
+  background: orange;
+  outline: 1px solid black;
+}
+
+#eatingCarrot:checked  ~ .head {
+  animation: moveHead 1.5s linear 0s alternate none;
+}
+
+
+
