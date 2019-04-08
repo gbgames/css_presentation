@@ -17,9 +17,9 @@
   <h1>CSS: The tl;dr </h1>
   <p> Tackle your next project with more confidence when you: </p>
   <ul>
-  <li> <p>Understand the Box Model</p> </li>
-  <li> <p>Understand the logic of HTML rendering flow</p> </li>
   <li> <p>Understand the difference between block and inline elements</p> </li>
+  <li> <p>Understand the logic of HTML rendering flow</p> </li>
+  <li> <p>Understand the Box Model</p> </li>
   </ul>
   <div class="Nav">
     <div class="Next">Next</div>
@@ -82,6 +82,7 @@
   <p> HTML is text annotated with meaning. For example: </p>
   <h1> I used &lt;h1&gt; here to say this is a heading</h1>
   <p> I used &lt;em&gt; <em>here</em> to emphasize the word "here"</p>
+  <p> I used &lt;a href&gt; <a href="https://www.gbgames.com/">here</a> to create a link to my website</p>
   <div class="Nav">
   <div></div>
     <div class="Next">Next</div>
@@ -110,7 +111,7 @@
 
 <div class="Block">
   <h1>CSS: The Interior Decorator</h1>
-  <p> If HTML is marked-up content, then CSS is the wrapper/painter/stylist.</p>
+  <p> If HTML is marked-up content, then CSS is the presentation of that content.</p>
   <p> CSS styles allow you to bring out the meaning of HTML. For example: </p>
   <h1> I used &lt;h1&gt; here to say this is a heading</h1>
   <p> is styled with: </p>
@@ -125,6 +126,7 @@
 	  font-family: sans-serif;
 	  font-weight: lighter;
 	  font-size: 12px;
+	  color: red;
   }</p>
   
   <h1 class="h1_style_example">And it would look like this, which isn't very heading-ish, is it?</h1>
@@ -135,8 +137,154 @@
   </div>
 </div> 
 
+<div class="Block">
+  <h1>HTML: The Normal Flow</h1>
+  <p> HTML is a tree structure </p>
+  <ul>
+	<li><p>Parents</p></li>
+	<ul>
+		<li><p>Children</p></li>
+		<li><p>Siblings</p></li>
+	</ul>
+  </ul>
 
-</div>
+  <p>This structure dictates order and layering, and how elements fit around each other in general.</p>
+  <p> And CSS lets us change that flow! </p>
+  
+  <div class="ExampleFrame">
+	<p>We can fix this with CSS! -&gt;</p >
+	<div class="FlowExample">
+		<div class="FlowExample2"></div>
+		<div class="FlowExample2"></div>
+		<div class="FlowExample2"></div>
+	</div>
+
+	<p> See! -&gt; </p>
+
+	<div class="FlowExample3">
+		<div class="FlowExample2"></div>
+		<div class="FlowExample2"></div>
+		<div class="FlowExample2"></div>
+	</div>
+  </div>
+
+
+  <div class="Nav">
+  <div></div>
+    <div class="Next">Next</div>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>The Box Model</h1>
+  <p> It's fairly straightforward.</p>
+
+  <div class="BoxModelMargin Hoverable">
+	Margin 
+	<div class="BoxModelBorder Hoverable">
+		Border 
+		<div class="BoxModelPadding Hoverable">
+			Padding
+			<div class="BoxModelContent Hoverable">
+				Content 
+			</div>
+		</div>
+	</div>
+  </div>
+
+  <div class="Nav">
+  <div></div>
+    <div class="Next">Next</div>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>The Box Model</h1>
+  <p> The margin surrounds the box. It says "Don't let other boxes come too close to me" </p>
+  <p> Margins don't add up between boxes. They "collapse" instead. </p>
+  <p> I imagine not knowing about the collapse can result in a Peter-Griffin-wrestling-with-blinds situation. </p>
+
+  <div class="BoxModelMargin">
+	<p>Box with margin of 10px</p>
+  </div>
+  <div class="BoxModelMargin">
+	<p>Another box with the same margin.</p>
+  </div>
+  <div class="BoxModelMargin2">
+	<p>A third box with 20px margin.</p>
+  </div>
+
+  
+  <div class="Nav">
+  <div></div>
+    <div class="Next">Next</div>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>The Box Model</h1>
+  <p> The border can have its own width and style. </p>
+
+  <div class="BoxModelBorder2">
+	<p>A thin black border surrounding the box.</p>
+  </div>
+  <div class="BoxModelBorder5">
+	<p>A thin black border curved at the corners </p>
+  </div>
+
+  <div class="BoxModelBorder3">
+	<p>A big dashed border.</p>
+  </div>
+  <div class="BoxModelBorder4">
+	<p>A large, curved dotted border, but only on one side.</p>
+  </div>
+
+  
+  <div class="Nav">
+  <div></div>
+    <div class="Next">Next</div>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>The Box Model</h1>
+  <p> The padding is like margin, but on the inside, where it counts. </p>
+  <p> You can give the contents of your elements space to breathe...or not. </p>
+
+  <div class="BoxModelPadding">
+	<span class="VimAd">I'm 25px away from the border of my containing box</span> 
+	<p> It's a bit cramped, but we can make it work. Keep in mind that this &lt;p&gt; element has its own margin and padding, too. </p>
+  </div>
+
+  <div class="BoxModelPadding2">
+	<span class="VimAd">I'm 100px away from the border of my containing box. I can take a hint</span>
+	<p> It's spacious here, but how are the schools in the area? </p>
+  </div>
+
+  <div class="Nav">
+  <div></div>
+    <div class="Next">Next</div>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>Putting It All Together</h1>
+  <p> We have a good mental model for how web pages render now:
+  <ul>
+	<li> <p> We know that HTML can be arranged in blocks with some inline markup as well. </p> </li> 
+	<li> <p> We know about the flow of HTML. </p> </li> 
+	<li> <p> We know how the boxes are supposed to work in relation to each other. </p> </li> 
+  </ul>
+
+  <h2> But do I know enough to be dangerous? </h2>
+
+  <div class="Nav">
+  <div></div>
+    <div class="Next">Next</div>
+  </div>
+</div> 
+
+
 
 
 
