@@ -8,9 +8,6 @@
 <div class="Block">
   <h1>CSS and why it is your fault you hate it</h1>
   <p>by Gianfranco Berardi</p>
-  <div class="Nav">
-    <div class="Next">Next</div>
-  </div>
 </div>
 
 <div class="Block">
@@ -21,9 +18,6 @@
   <li> <p>Understand the logic of HTML rendering flow</p> </li>
   <li> <p>Understand the Box Model</p> </li>
   </ul>
-  <div class="Nav">
-    <div class="Next">Next</div>
-  </div>
 </div>
 
 <div class="Block">
@@ -33,14 +27,11 @@
   <ul>
     <li> <p>he | him | his </p></li>
     <li> <p>(Not an actual Web Developer)</p></li>
-    <li> <p>Game developer who loves minimizing dependencies</p> </li>
+    <li> <p>Game developer <a href="https://www.gbgames.com/">(GBGames.com)</a> who loves minimizing dependencies</p> </li>
     <li> <p>Loves getting hands dirty <span class="VimAd">This site created with Vim</span></p> </li>
     <li> <p>Insatiably curious</p></li>
   </ul>
   
-  <div class="Nav">
-    <div class="Next">Next</div>
-  </div>
 </div>
 
 <div class="Block">
@@ -48,23 +39,17 @@
   <p> Curious how browsers work under the hood (what can I steal for my game dev?)</p>
   <p> Curious why so many people hate CSS (it can't be that bad, can it?) </p>
   <p> Curious how to get better at my day job (much more front-end work) </p>
-  <div class="Nav">
-    <div class="Next">Next</div>
-  </div>
 </div> 
 
 <div class="Block">
   <h1>It's a Poor Workman Who Blames His Tools </h1>
-  <img src="PeterGriffin-CSS.gif"/>
+  <img class="NotDistorted2" src="PeterGriffin-CSS.gif"/>
   <h2>My Hypothesis</h2>
   <p> CSS is super easy to get into </p>
   <p> So people think they know it </p>
   <p> But they don't </p>
   <p> Then they get mad that the tool isn't working like they expect it to </p>
   <p> Easy to edit != Easy to do </p>
-  <div class="Nav">
-    <div class="Next">Next</div>
-  </div>
 </div> 
 
 <div class="Block">
@@ -72,9 +57,6 @@
   <p> CSS <em>is</em> super easy to get into </p>
   <p> HTML/CSS layout and flow is also super logical </p>
   <p> But you need the right mental model </p>
-  <div class="Nav">
-    <div class="Next">Next</div>
-  </div>
 </div> 
 
 <div class="Block">
@@ -84,9 +66,6 @@
   <h1> I used &lt;h1&gt; here to say this is a heading</h1>
   <p> I used &lt;em&gt; <em>here</em> to emphasize the word "here"</p>
   <p> I used &lt;a href&gt; <a href="https://www.gbgames.com/">here</a> to create a link to my website</p>
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -103,9 +82,6 @@
 	<p> An example with <span class="InlineExample">something inline</span> of this otherwise ordinary block.</p>
   </div>
   <h2> This distinction was news to me! </h2>
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -117,10 +93,16 @@
   <h1> I used &lt;h1&gt; here to say this is a heading</h1>
   <p> is styled with: </p>
   <p>h1 {
+  box-shadow: 10px 5px 5px 1px rgba(5, 5, 5, 5);
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
   font-family: serif;
   font-weight: bold;
   font-size: 46px;
-  }</p>
+  padding: 10px;
+}
+</p>
 
   <p> It could just as easily have been styled with: </p>
   <p> h1 {
@@ -132,9 +114,6 @@
   
   <h1 class="h1_style_example">And it would look like this, which isn't very heading-ish, is it?</h1>
 
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -170,9 +149,6 @@
   </div>
 
 
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -193,9 +169,6 @@
 	</div>
   </div>
 
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -216,9 +189,6 @@
   </div>
 
   
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -241,9 +211,6 @@
   </div>
 
   
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -262,9 +229,6 @@
 	<p> It's spacious here, but how are the schools in the area? </p>
   </div>
 
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -279,9 +243,6 @@
 
   <h2> But do I know enough to be dangerous? </h2>
 
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
   </div>
 </div> 
 
@@ -293,9 +254,79 @@
 
   <p> <a href="bunnies.html">Let's pet some bunnies!</a> </p>
 
-  <div class="Nav">
-  <div></div>
-    <div class="Next">Next</div>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>Helping a Friend</h1>
+  <p> A colleague reached out to me asking for help with a non-profit's website. </p>
+  <p> The staff photos looked distorted. 
+  <p> Had he asked just a few weeks prior, I would not have known how to fix the images. </p>
+  <p> A quick check, and I changed:</p> 
+  <p>.maincontent img{
+	height:100px;
+	width:100px;
+}</p>
+  <img class="Distorted" src="gb-2.png"/> 
+
+  <p>to</p>
+
+  <p>
+  .maincontent img{
+	  width:100px;
+  }
+  </p>
+
+  <img class="NotDistorted" src="gb-2.png"/> 
+
+  <h2> Nothing major, but BAM! I'm a web developer now, right? </h2>
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>Can I Do My Day Job Better?</h1>
+  <p> Yes, it turns out! </p>
+
+  <p>PRIOR: Bumbled through. </p>
+  
+  <p>TODAY: Bumble through with educated guesses about the box I am poking at. </p>
+
+  <p>RESULT: Much faster turnaround on styling work. </p>
+
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>What's Next?</h1>
+  <img class="NotDistorted" src="CSS_IS_AWESOME.jpg"/>
+  <p> Learn more of the fundamentals: what's with float? See Mandy Michael's "CSS is Awesome" thread on Twitter: <a href="https://twitter.com/Mandy_Kerr/status/985351593972252672">https://twitter.com/Mandy_Kerr/status/985351593972252672</a> </p>
+  <p> Learn best practices. </p>
+  <p> Figure out how to use concepts from the Flow and the Box Model in my 2D game development. </p>
+  <p> Write a CSS-only game. See The Mine: <a href="https://codepen.io/jcoulterdesign/pen/NOMeEb">https://codepen.io/jcoulterdesign/pen/NOMeEb</a></p>
+  <p> Use CSS to draw better-looking bunnies. See Wenting Zhang's work and A Single Div: <a href="https://a.singlediv.com/">https://a.singlediv.com/</a>. </p>
+  <p> </p>
+
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>Resources</h1>
+  <ul>
+	<li> <p> <a href="https://marksheet.io">MarkSheet.io</a>, a free HTML &amp; CSS tutorial </p> </li>
+	<li> <p> <a href="https://developer.mozilla.org/">MDN web docs</a>, resources for developers, by developers </p> </li>
+	<li> <p> <a href="https://css-tricks.com/">CSS-Tricks</a>, a neat resource for web development</p> </li>
+  </ul>
+
+  </div>
+</div> 
+
+<div class="Block">
+  <h1>Questions?</h1>
+
+  <h2> Gianfranco Berardi </h2>
+    <li> <p> Website: <a href="https://www.gbgames.com/">GBGames.com</a> </p> </li>
+    <li> <p> Twitter: <a href="https://www.twitter.com/GBGames">@GBGames</a> </p> </li>
+    <li> <p> Google+: RIP </p> </li>
   </div>
 </div> 
 
