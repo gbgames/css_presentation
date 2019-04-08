@@ -1,3 +1,6 @@
+ {
+}
+
 body {
   background-color: moccasin;
 }
@@ -56,3 +59,31 @@ p {
   box-shadow: 5px 2px 2px 1px rgba(5, 5, 5, 5);
   padding: 5px;
 }
+
+.BlockExample {
+	background-color: lightblue;
+	color: black;
+	margin: 5px;
+	padding: 5px;
+    border: 1px solid red !important;
+	display: flex;
+}
+
+div.BlockExample p{
+	margin: 5px;
+	padding: 10px;
+    border: 1px solid red !important;
+}
+
+.InlineExample {
+	color: red;
+	text-decoration: underline;
+}
+
+.h1_style_example {
+	  font-family: sans-serif;
+	  font-weight: lighter;
+	  font-size: 12px;
+}
+  
+
